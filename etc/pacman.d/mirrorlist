@@ -1,0 +1,18 @@
+##########################################
+# Chloe B.'s Package Manager Mirror List #
+##########################################
+
+# Updated 8 December 2025.
+
+############################
+# United States of America #
+############################
+
+# Massachusettes Institute of Technology (MIT).
+Server = https://mirrors.mit.edu/archlinux/$repo/os/$arch
+
+# University of California, Berkeley
+Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+
+# Kernel (dot) Org
+Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
