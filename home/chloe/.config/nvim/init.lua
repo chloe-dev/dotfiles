@@ -63,7 +63,7 @@ require("lazy").setup({
     spec = {
         { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", lazy = false },
         { "xiyaowong/transparent.nvim" },
-	{ "EdenEast/nightfox.nvim" }
+        { "EdenEast/nightfox.nvim" }
     },
 
     install = {
