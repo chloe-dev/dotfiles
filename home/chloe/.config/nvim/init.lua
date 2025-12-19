@@ -10,24 +10,24 @@ if not (vim.uv or vim.loop).fs_stat(lazy_data_path) then
 
     local command_output = vim.fn.system(
         { "git", 
-	  "clone", 
-	  "--filter=blob:none", 
-	  "--branch=stable", 
-	  lazy_github_repository, 
-	  lazy_data_path 
+          "clone", 
+          "--filter=blob:none", 
+          "--branch=stable", 
+          lazy_github_repository, 
+          lazy_data_path 
         }
     ) -- git clone --filter=blob:none --branch=stable https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/lazy/lazy.nvim
 
     if vim.v.shell_error ~= 0 then
         vim.api.nvim_echo({
             { "[ERROR]: Failed to clone lazy.nvim.\n", "ErrorMsg" },
-	    { "[INFO]: " .. command_output .. ".\n", "StdoutMsg" },
-	    { "[INFO]: Press any key to exit." }
-	}, true, {})
+            { "[INFO]: " .. command_output .. ".\n", "StdoutMsg" },
+            { "[INFO]: Press any key to exit." }
+        }, true, {})
 
-	vim.fn.getchar()
+        vim.fn.getchar()
 
-	os.exit(1)
+        os.exit(1)
     end
 end
 
@@ -51,6 +51,12 @@ vim.opt.number = true
 
 -- Show the relative line number for surrounding lines.
 vim.opt.relativenumber = true
+
+-- Visualize tabulation (tab) characters.
+vim.opt.list = true
+vim.opt.listchars = {
+    tab = ">-"
+}
 
 -- Setup lazy.nvim and associated plugins.
 require("lazy").setup({
