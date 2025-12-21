@@ -1,0 +1,86 @@
+################################################
+# Chloe B.'s Nightfox (Carbonfox) btop++ Theme #
+################################################
+
+# https://github.com/EdenEast/nightfox.nvim
+
+# If no transparency is desired, set to #272E33.
+theme[main_bg]=""
+
+# Main text color.
+theme[main_fg]="#CDCECF"
+
+# Title color (boxes).
+theme[title]="#CDCECF"
+
+# Highlight color (keyboard shortcuts).
+theme[hi_fg]="#D06F79"
+
+# Background color (selected items).
+theme[selected_bg]="#3E4A5B"
+
+# Color of text on graphs (e.g., uptime).
+theme[graph_text]="#CDCECF"
+
+# Miscellaneous colors for process boxes.
+theme[proc_misc]=""
+
+# CPU box outline.
+theme[cpu_box]="#8AA872"
+
+# Memory and Disks box outline.
+theme[mem_box]="#D9B263"
+
+# Network box outline.
+theme[net_box]="#9D7495"
+
+# Processes box outline.
+theme[proc_box]="#A54E56"
+
+# Divider line.
+theme[div_line]=""
+
+# Temperature graph.
+theme[temp_start]="#A3BE8C"
+theme[temp_mid]="#C9826B"
+theme[temp_end]="#BF616A"
+
+# CPU graph.
+theme[cpu_start]="#A3BE8C"
+theme[cpu_mid]="#C9826B"
+theme[cpu_end]="#BF616A"
+
+# Memory and Disks free meter.
+theme[free_start]="#BF616A"
+theme[free_mid]="#C9826B"
+theme[free_end]="#A3BE8C"
+
+# Memory and Disks cached meter.
+theme[cached_start]="#A3BE8C"
+theme[cached_mid]="#C9826B"
+theme[cached_end]="#BF616A"
+
+# Memory and Disks available meter.
+theme[available_start]="#BF616A"
+theme[available_mid]="#C9826B"
+theme[available_end]="#A3BE8C"
+
+# Memory and Disks used meter.
+theme[used_start]="#A3BE8C"
+theme[used_mid]="#C9826B"
+theme[used_end]="#BF616A"
+
+# Download graph.
+theme[download_start]="#A3BE8C"
+theme[download_mid]="#C9826B"
+theme[download_end]="#BF616A"
+
+# Upload graph.
+theme[upload_start]="#A3BE8C"
+theme[upload_mid]="#C9826B"
+theme[upload_end]="#BF616A"
+
+# Process box gradient.
+theme[process_start]="#A3BE8C"
+theme[process_mid]="#C9826B"
+theme[process_end]="#BF616A"
