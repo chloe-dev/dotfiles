@@ -1,0 +1,81 @@
+// -*- mode: jsonc -*-
+
+////////////////////////////////////////
+// Chloe B.'s fastfetch Configuration //
+////////////////////////////////////////
+
+{
+    "logo": {
+        "color": {
+            "1": "#0F94D2",
+            "2": "#0F94D2"
+        },
+
+        "padding": {
+            "top": 1,
+            "right": 4
+        }
+    },
+
+    "display": {
+        "hideCursor": true,
+
+        "separator": " • ",
+
+        "color": {
+            "keys": "#0F94D2",
+            "title": "#0F94D2"
+            //"keys": "#F5A9B8",
+            //"title": "#F5A9B8"
+        },
+    },
+
+    "modules": [
+        // Vertical padding.
+        "break",
+        "break",
+
+        "title",
+
+        "break",
+
+        "os",
+
+        "break",
+
+        {
+            "type": "cpu",
+            "key": "CPU",
+            "format": "{name}"
+        },
+
+        {
+            "type": "gpu",
+            "key": "GPU",
+            "format": "{name}"
+        },
+
+        {
+            "type": "memory",
+            "key": "RAM",
+            "format": "{used} / {total}"
+        },
+
+        "break",
+
+        {
+            "type": "disk",
+            "key": "CSD",
+            "format": "{size-used} / {size-total} ({mountpoint})"
+        },
+
+        "break",
+
+        "colors",
+
+        // Vertical padding.
+        "break",
+        "break",
+        "break"
+    ]
+}
