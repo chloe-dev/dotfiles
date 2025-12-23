@@ -1,0 +1,116 @@
+/*******************************************/
+/* Chloe B.'s Waybar Styling Configuration */
+/*******************************************/
+
+/* 
+ * Properties are organized alphabetically, unless noted otherwise, in this order.
+ * Layout -> Box Model (Outside -> Inside) -> Visuals -> Typography -> Misc. 
+ */
+
+* {
+    /* Clear all pre-existing formatting. */
+
+    min-height: 32px;
+
+    margin: 0;
+
+    outline-color: rgba(0, 0, 0, 0.0);
+    outline-offset: 0;
+    outline-style: none;
+    outline-width: 0;
+
+    border-color: rgba(0, 0, 0, 0.0);
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
+
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.0);
+    box-shadow: none;
+
+    color: rgba(205, 206, 207, 1.0);
+    letter-spacing: 0;
+    text-decoration: none;
+    text-shadow: none;
+
+    /* Set the font families for all elements. */
+    font-family: "JetBrains Mono", "Font Awesome 7 Free", "Font Awesome 7 Brands", monospace;
+    font-size: 16px;
+}
+
+tooltip {
+    background-color: rgba(0, 0, 0, 0.85);
+    
+    box-shadow: inset 0px -3px rgba(205, 206, 207, 1.0);
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Left-aligned modules. */
+
+#cpu {
+    margin: 0px 8px 0px 16px;
+
+    padding: 0px 8px;
+
+    box-shadow: inset 0px -3px rgba(138, 168, 114, 1.0);
+}
+
+#memory {
+    margin: 0px 8px;
+
+    padding: 0px 8px;
+
+    box-shadow: inset 0px -3px rgba(217, 178, 99, 1.0);
+}
+
+#network {
+    margin: 0px 8px;
+
+    padding: 0px 8px;
+
+    box-shadow: inset 0 -3px rgba(157, 116, 149, 1.0);
+}
+
+#wireplumber {
+    margin-left: 8px;
+
+    padding: 0px 8px;
+
+    box-shadow: inset 0 -3px rgba(102, 138, 171, 1.0);
+}
+
+/* Center-aligned modules. */
+
+#clock {
+    padding: 0px 8px;
+
+    box-shadow: inset 0 -3px rgba(205, 206, 207, 1.0);
+}
+
+/* Right-aligned modules. */
+
+#workspaces {
+    margin-right: 16px;
+}
+
+#workspaces button {
+    margin: 0px 4px;
+
+    padding: 0px 4px;
+}
+
+#workspaces button:hover {
+    background: rgba(191, 191, 191, 0.5);
+}
+
+#workspaces button.visible {
+    box-shadow: inset 0 -3px rgba(165, 78, 86, 1.0);
+}
+
+#workspaces button.active {
+    background-color: rgba(127, 127, 127, 0.50);
+}

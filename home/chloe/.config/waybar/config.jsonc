@@ -1,0 +1,111 @@
+// -*- mode: jsonc -*-
+
+/////////////////////////////////////
+// Chloe B.'s Waybar Configuration //
+/////////////////////////////////////
+
+{
+    /////////////
+    // GENERAL //
+    /////////////
+
+    "layer": "bottom",
+
+    //////////////////////
+    // MODULE LOCATIONS //
+    //////////////////////
+
+    "modules-left": [
+        "cpu",
+        "memory",
+        "network#download",
+        "network#upload",
+        /* "battery", */
+        /* "backlight", */
+        "wireplumber"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "hyprland/workspaces"
+    ],
+
+    ///////////////////////////
+    // MODULE CONFIGURATIONS //
+    ///////////////////////////
+
+    // Left-aligned modules.
+
+    "cpu": {
+        "interval": 1,
+        "tooltip": false,
+        "format": " • {usage}%",
+        "on-click": "kitty -- btop"
+    },
+
+    "memory": {
+        "interval": 1,
+        "tooltip": false,
+        "format": " • {percentage}%",
+        "on-click": "kitty -- btop"
+    },
+
+    "network#download": {
+        "interval": 1,
+        "format": " • {bandwidthDownBytes}",
+        "tooltip-format-ethernet": "{essid} () • {ipaddr}",
+        "tooltip-format-wifi": "{essid} () • {ipaddr}",
+        "on-click": "kitty -- btop"
+    },
+
+    "network#upload": {
+        "interval": 1,
+        "format": " • {bandwidthUpBytes}",
+        "tooltip-format-ethernet": "{essid} () • {ipaddr}",
+        "tooltip-format-wifi": "{essid} () • {ipaddr}",
+        "on-click": "kitty -- btop"
+    },
+
+    "wireplumber": {
+        "tooltip": false,
+        "format": " • {volume}%",
+        "format-muted": " • Muted",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "scroll-step": 2
+    },
+
+    // Center-aligned modules.
+
+    "clock": {
+        "interval": 1,
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%A, %d %B %Y}",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "mode": "month",
+            "weeks-pos": "right",
+            "mode-mon-col": 3,
+            "format": {
+                "months": "<span color=\"#F5A9B8\"><b>{}</b></span>",
+                "weeks": "<span color=\"#F5A9B8\"><b>{}</b></span>",
+                "weekdays": "<b>{}</b>",
+                "today": "<span color=\"#F5A9B8\"><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-down": "shift_up",
+            "on-scroll-up": "shift_down"
+        }
+    },
+
+    // Right-aligned modules.
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "move-to-monitor": true
+    }
+}
