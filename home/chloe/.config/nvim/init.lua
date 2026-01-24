@@ -58,9 +58,22 @@ vim.opt.listchars = {
     tab = ">-"
 }
 
+-- Allow Ctrl + Backspace to delete words in Insert mode.
+vim.keymap.set("i", "<C-BS>", "<C-w>")
+vim.keymap.set("c", "<C-BS>", "<C-w>")
+vim.keymap.set("i", "<C-H>", "<C-w>")
+vim.keymap.set("c", "<C-H>", "<C-w>")
+
 -- Setup lazy.nvim and associated plugins.
 require("lazy").setup({
     spec = {
+        {
+            "lervag/vimtex",
+            lazy = false,
+            init = function()
+                vim.g.vimtex_view_general_viewer = "firefox"
+            end
+        },
         { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", lazy = false },
         { "xiyaowong/transparent.nvim" },
         { "EdenEast/nightfox.nvim" }
