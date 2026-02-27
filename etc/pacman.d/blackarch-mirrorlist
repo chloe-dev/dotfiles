@@ -1,0 +1,6 @@
+#########################################################################
+# Chloe B.'s Package Manager Mirror List (for the BlackArch Repository) #
+#########################################################################
+
+# University of California, Berkeley
+Server = https://mirrors.ocf.berkeley.edu/blackarch/$repo/os/$arch
