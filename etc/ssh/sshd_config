@@ -1,0 +1,67 @@
+###########################################
+# Chloe B.'s OpenSSH Daemon Configuration #
+###########################################
+
+# Include additional drop-in configurations.
+Include    /etc/ssh/sshd_config.d/*.conf
+
+##################
+# AUTHENTICATION #
+##################
+
+# Authentication methods required.
+AuthenticationMethods    publickey
+
+# Permitted key exchange algorithms.
+KexAlgorithms    sntrup761x25519-sha512,sntrup761x25519-sha512@openssh.com,mlkem768x25519-sha256
+
+# Disable password authentication.
+PasswordAuthentication    no
+
+# Disable keyboard interactive authentication.
+KbdInteractiveAuthentication    no
+
+# Location of the authorized keys file.
+AuthorizedKeysFile    .ssh/authorized_keys
+
+# Disable logging in as the root user.
+PermitRootLogin    no
+
+# Set the login grace time.
+LoginGraceTime    30s
+
+# Set the maximum number of authentication attempts.
+MaxAuthTries    1
+
+# Set the maximum number of unauthenticated startups.
+MaxStartups    1
+
+# Set the maximum number of authenticated sessions.
+# NOTE: only applies to the same network connection.
+MaxSessions    6
+
+# Set the frequency of session rekeying.
+RekeyLimit    1G 15m
+
+###########
+# SESSION #
+###########
+
+# Disable printing the message of the day (MOTD).
+PrintMotd    no
+
+# Enable compression after authentication.
+Compression    yes
+
+# Set the client alive interval.
+ClientAliveInterval    60
+
+# Set the maximum number of missed client alive queries.
+ClientAliveCountMax    5
+
+##############
+# SUBSYSTEMS #
+##############
+
+# SFTP.
+Subsystem    sftp    /usr/lib/ssh/sftp-server
