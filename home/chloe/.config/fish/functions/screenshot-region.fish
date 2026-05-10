@@ -4,5 +4,5 @@
 
 function screenshot-region
     # Screenshot a region and send it to the clipboard.
-    grim -g "$(slurp)" - | wl-copy
+    grim -g "$(slurp)" - | tee ~/.screenshots/$(date +%Y-%m-%d-%H-%M-%S).png | wl-copy
 end
