@@ -89,10 +89,10 @@
             "weeks-pos": "right",
             "mode-mon-col": 3,
             "format": {
-                "months": "<span color=\"#F5A9B8\"><b>{}</b></span>",
-                "weeks": "<span color=\"#F5A9B8\"><b>{}</b></span>",
+                "months": "<span color=\"#FE75D8\"><b>{}</b></span>",
+                "weeks": "<span color=\"#FE75D8\"><b>{}</b></span>",
                 "weekdays": "<b>{}</b>",
-                "today": "<span color=\"#F5A9B8\"><b>{}</b></span>"
+                "today": "<span color=\"#FE75D8\"><b>{}</b></span>"
             }
         },
         "actions": {

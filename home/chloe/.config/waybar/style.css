@@ -29,7 +29,7 @@
     background-color: rgba(0, 0, 0, 0.0);
     box-shadow: none;
 
-    color: rgba(205, 206, 207, 1.0);
+    color: rgba(247, 247, 247, 1.0);
     letter-spacing: 0;
     text-decoration: none;
     text-shadow: none;
@@ -42,7 +42,7 @@
 tooltip {
     background-color: rgba(0, 0, 0, 0.85);
     
-    box-shadow: inset 0px -3px rgba(205, 206, 207, 1.0);
+    box-shadow: inset 0px -2px rgba(148, 91, 228, 1.0);
 }
 
 window#waybar {
@@ -56,7 +56,7 @@ window#waybar {
 
     padding: 0px 8px;
 
-    box-shadow: inset 0px -3px rgba(138, 168, 114, 1.0);
+    box-shadow: inset 0px -2px rgba(148, 91, 228, 1.0);
 }
 
 #memory {
@@ -64,7 +64,7 @@ window#waybar {
 
     padding: 0px 8px;
 
-    box-shadow: inset 0px -3px rgba(217, 178, 99, 1.0);
+    box-shadow: inset 0px -2px rgba(148, 91, 228, 1.0);
 }
 
 #network {
@@ -72,7 +72,7 @@ window#waybar {
 
     padding: 0px 8px;
 
-    box-shadow: inset 0 -3px rgba(157, 116, 149, 1.0);
+    box-shadow: inset 0 -2px rgba(148, 91, 228, 1.0);
 }
 
 #wireplumber {
@@ -80,7 +80,7 @@ window#waybar {
 
     padding: 0px 8px;
 
-    box-shadow: inset 0 -3px rgba(102, 138, 171, 1.0);
+    box-shadow: inset 0 -2px rgba(148, 91, 228, 1.0);
 }
 
 /* Center-aligned modules. */
@@ -88,7 +88,7 @@ window#waybar {
 #clock {
     padding: 0px 8px;
 
-    box-shadow: inset 0 -3px rgba(205, 206, 207, 1.0);
+    box-shadow: inset 0 -2px rgba(148, 91, 228, 1.0);
 }
 
 /* Right-aligned modules. */
@@ -104,13 +104,13 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: rgba(191, 191, 191, 0.5);
+    background: rgba(99, 99, 99, 0.75);
 }
 
 #workspaces button.visible {
-    box-shadow: inset 0 -3px rgba(165, 78, 86, 1.0);
+    box-shadow: inset 0 -2px rgba(148, 91, 228, 1.0);
 }
 
 #workspaces button.active {
-    background-color: rgba(127, 127, 127, 0.50);
+    background-color: rgba(99, 99, 99, 0.75);
 }
